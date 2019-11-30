@@ -95,7 +95,7 @@ class ShipCorridor < Scene
         puts "in your way. What do you do? Shoot? Dodge? Talk?"
         
         choice2 = $stdin.gets.chomp
-        if choice2 == "shoot"
+        if choice2 == "Shoot"
             puts "You whip out your blaster and fry the aliens face."
             puts "But the sound of the blaster brings a bunch of aliens."
             puts "Do you exit the ship or fight the aliens? Exit or Fight?"
@@ -290,7 +290,7 @@ class PatrolShip < Scene
             guesses = 0
             
             while guess != code and guesses < 10
-                puts "ERROR: WRONG VALUE GIVEN PLEASE TRY AGAIN YOUR GUESS WAS #{guess - code} AWAY FROM THE REAL ANSWER."
+                puts "ERROR: WRONG VALUE GIVEN PLEASE TRY AGAIN YOUR GUESS (#{guess}) WAS #{guess - code} AWAY FROM THE REAL ANSWER."
                 guesses += 1
                 guess = gets.to_i
             end
@@ -371,7 +371,7 @@ class MunitionRoom < Scene
         guesses2 = 0
         
         while guess2 != number and guesses2 < 5
-            puts "GOTBLOG USHO SOFORONIA TROK BLOG BLOV GORTIK #{guess - code}"
+            puts "GOTBLOG USHO SOFORONIA TROK BLOG BLOV GORTIK #{guess2 - number} FROAG #{guess2}"
             guesses2 += 1
             guess2 = gets.to_i
             if guess2 = number 
